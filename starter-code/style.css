@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color:white;
+}
+@font-face {
+    font-family: "barlow";
+    src: url(/starter-code/font/BarlowCondensed-Medium.ttf);
+}
+body{
+    background-image: url(/starter-code/assets/home/background-home-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Shows full image (may have gaps) */
+    min-height: 100vh;
+    background-image: url(/starter-code/assets/home/background-home-desktop.jpg);
+    background-size: 100% 100%; /* Forces exact width/height (may stretch) */
+    font-size: 1rem;
+    font-family: "barlow";
+}
+header{
+    margin-top: 2rem;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+header img{
+
+}
+header ul li a{
+    text-decoration: none;
+    list-style-type: none;
+    letter-spacing: 5px;
+}
+header ul li{list-style-type: none;}
+header ul{ 
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+    border:solid red 0.3px;
+    padding: 1rem;
+    width: 70%;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+.main-leftside{
+
+}
+.main-leftside p{
+    width: 20%;
+    
+}
