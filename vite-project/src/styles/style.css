@@ -1,0 +1,96 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+@import "tailwindcss";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: BarlowCondensedRegular;
+    src: url(/src/font/BarlowCondensed-Regular.ttf);
+}
+@font-face {
+    font-family: bellefairRegular;
+    src: url(/src/font/Bellefair-Regular.ttf);
+}
+@font-face {
+    font-family: BarlowRegular;
+    src: url(/src/font/Barlow/Barlow-Regular.ttf);
+}
+:root{
+  --text-xxs: 0.875rem;   
+  --text-xs: 0.9375rem;   
+  --text-sm: 1rem;        
+  --text-base: 1.25rem;   
+  --text-md: 1.5rem;      
+  --text-lg: 1.75rem;     
+  --text-xl: 2rem;        
+  --text-2xl: 2.5rem;     
+  --text-3xl: 3.5rem;     
+  --text-4xl: 5rem;       
+  --text-5xl: 6.25rem;    
+  --text-6xl: 9rem;       
+
+  --BarlowCondensedRegular:BarlowCondensedRegular;
+  --fontbellefair:bellefairRegular;
+  --fontbarlow:BarlowRegular;
+  --textColor:hsl(0, 0%, 100%);
+  --blue-900:hsl(230, 35%, 7%);
+  --blue-600:hsl(231, 77%, 90%);
+}
+body {
+  min-height: 100vh;
+  font-size: var(--fontsize);
+  font-family:var(--fontbarlow);
+}
+
+@layer components {
+.font-barlow{
+  font-family: var(--fontbarlow);
+}
+.font-bellefair{
+    font-family: var(--fontbellefair);
+}
+.font-barlowC{
+  font-family: var(--BarlowCondensedRegular);
+}
+}
+@theme{
+  --color-blue-600:var(--blue-600);
+  --color-blue-900:var(--blue-900);
+  --color-white:var(--textColor);
+  --text-xxs: 0.875rem;   /* 14px */
+  --text-xs: 0.9375rem;   /* 15px */
+  --text-sm: 1rem;        /* 16px */
+  --text-18:1.125rem;      /* 18 px */
+  --text-base: 1.25rem;   /* 20px */
+  --text-md: 1.5rem;      /* 24px */
+  --text-lg: 1.75rem;     /* 28px */
+  --text-xl: 2rem;        /* 32px */
+  --text-2xl: 2.5rem;     /* 40px */
+  --text-3xl: 3.5rem;     /* 56px */
+  --text-4xl: 5rem;       /* 80px */
+  --text-5xl: 6.25rem;    /* 100px */
+  --text-6xl: 9rem;       /* 144px */
+}
+  
+
+.hover-ring:hover::before {
+  @apply content-[''] absolute inset-0 rounded-full bg-white/10  hover:scale-150 hover:transition-all hover:duration-500;
+}
+.nav-styles{
+  @apply relative w-[98%] md:w-auto md:h-[96px] md:flex md:items-center hover:border-r-4  md:hover:border-r-0 md:hover:border-b-3
+     border-gray-400
+}
+.exploreBtn{
+  @apply rounded-full  relative hover:before:content-[''] hover:before:absolute hover:before:inset-0  hover:before:rounded-full hover:before:bg-white/10 hover:before:scale-150  hover:before:transition-all hover:before:duration-500 transition-transform duration-300 hover:text-gray-500 2xl:my-[2.219rem] 
+}
+.flexCenter{
+  @apply justify-center items-center flex
+}
+
+@theme {
+  --breakpoint-2xl: 90rem;
+}
+
