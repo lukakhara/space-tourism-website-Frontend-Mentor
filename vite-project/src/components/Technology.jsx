@@ -1,8 +1,3 @@
-import TechnolohyBgDesktop from "/src/assets/technology/background-technology-desktop.jpg";
-import TechnolohyBgMobile from "/src/assets/technology/background-technology-mobile.jpg";
-import TechnolohyBgTablet from "/src/assets/technology/background-technology-tablet.jpg";
-
-import Navigation from "./Navigation";
 import launchVehiclePort from "/src/assets/technology/image-launch-vehicle-portrait.jpg";
 import launchVehicleLand from "/src/assets/technology/image-launch-vehicle-landscape.jpg";
 import spaceportPort from "/src/assets/technology/image-spaceport-portrait.jpg";

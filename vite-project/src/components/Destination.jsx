@@ -1,8 +1,4 @@
 import { useEffect, useState } from "react";
-import Navigation from "./Navigation";
-import desnationBg from "/src/assets/destination/background-destination-desktop.jpg";
-import desnationBgTablet from "/src/assets/destination/background-destination-tablet.jpg";
-import desnationBgMobile from "/src/assets/destination/background-destination-mobile.jpg";
 import jsonData from "/src/datas/data.json";
 
 // Import all images statically

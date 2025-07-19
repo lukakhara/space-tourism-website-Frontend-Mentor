@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Navigation from "./Navigation";
 import jsonData from "/src/datas/data.json";
 import firstMemberPng from "/src/assets/crew/image-douglas-hurley.png";
 import secondMemberPng from "/src/assets/crew/image-mark-shuttleworth.png";

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import icon from "/src/assets/shared/logo.svg";
 import iconHamburger from "/src/assets/shared/icon-hamburger.svg";
 import iconClose from "/src/assets/shared/icon-close.svg";

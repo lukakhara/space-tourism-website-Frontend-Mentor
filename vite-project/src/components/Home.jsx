@@ -1,7 +1,3 @@
-import bgDesktop from "/src/assets/home/background-home-desktop.jpg";
-import bgTablet from "/src/assets/home/background-home-tablet.jpg";
-import bgMobile from "/src/assets/home/background-home-mobile.jpg";
-import Navigation from "./Navigation";
 import { useEffect } from "react";
 
 function Home() {
