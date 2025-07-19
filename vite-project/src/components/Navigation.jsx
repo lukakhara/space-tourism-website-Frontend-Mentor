@@ -16,7 +16,7 @@ function Navigation() {
     const handleClickOutside = (event) => {
       // If click is outside menu and not on the hamburger button
       if (
-        menuRef.current && 
+        menuRef.current &&
         !menuRef.current.contains(event.target) &&
         buttonRef.current &&
         !buttonRef.current.contains(event.target)

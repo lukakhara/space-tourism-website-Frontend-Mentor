@@ -17,7 +17,7 @@ function Home() {
           md:bg-[url('/src/assets/home/background-home-tablet.jpg')] 
           2xl:bg-[url('/src/assets/home/background-home-desktop.jpg')]"
       />
-    
+
       <main
         className="flex-1 w-full max-w-[1440px] mx-auto p-6  
               md:px-10 md:py-32 md:gap-[4.125rem]

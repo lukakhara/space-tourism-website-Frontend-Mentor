@@ -1,7 +1,14 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
-const NavigationItems = ({ to, number, title, className = "" ,setActivePage,onClick }) => {
+const NavigationItems = ({
+  to,
+  number,
+  title,
+  className = "",
+  setActivePage,
+  onClick,
+}) => {
   return (
     <li className={`${className}`} onClick={() => setActivePage(title)}>
       <NavLink
